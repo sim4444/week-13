@@ -1,3 +1,36 @@
 body {
-    background-color: tan;
+    background-color: pink;
+}
+#formelements{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+label{
+    text-align: center;
+}
+.buttonCenter{
+    display: flex;
+    justify-content: center;
+    /* or
+    margin: 0 auto;
+    display:block; */
+}
+
+/* //bigger screens */
+
+@media screen and (min-width:600px){
+    #formelements{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 40px;
+    }
+    .class1{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
